@@ -567,33 +567,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form id="contact-form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="email">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="button" id="submitBtn">Send Message</button></div>
-            </form>
-          </div>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFv03Q36EMzw9yrs098cKmxJI3refassVDXPVx80S13DBBCQ/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>          </div>
 
         </div>
 
@@ -616,32 +590,6 @@
   <!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-<script>document.getElementById("submitBtn").addEventListener("click", function() {
-  var formData = new FormData(document.getElementById("contact-form"));
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "sminhaj.suit@gmail.com", true);
-  xhr.onload = function () {
-    var response = JSON.parse(xhr.responseText);
-    if (xhr.status === 200 && response.success) {
-      // Success
-      document.getElementById("contact-form").reset();
-      document.querySelector(".sent-message").style.display = "block";
-    } else {
-      // Error
-      document.querySelector(".error-message").innerHTML = response.message;
-      document.querySelector(".error-message").style.display = "block";
-    }
-    document.querySelector(".loading").style.display = "none";
-  };
-  xhr.onerror = function() {
-    // Error
-    document.querySelector(".error-message").innerHTML = "Failed to send message.";
-    document.querySelector(".error-message").style.display = "block";
-    document.querySelector(".loading").style.display = "none";
-  };
-  xhr.send(formData);
-  document.querySelector(".loading").style.display = "block";
-});</script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
