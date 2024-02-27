@@ -23,7 +23,7 @@ Welcome to my portfolio website repository! This website showcases my work, skil
 1. Clone the repository:
    ```bash
    git clone https://github.com/Shahzad-Minhaj/My-Portfolio.git
-2. To preview the website, visit [My Portfolio Website](http://myporttfoliiooo.surge.sh)
+2. To preview the website, visit [My Portfolio Website](https://shahzad-minhaj.github.io/My-Portfolio/)
 
 ## Credit
 The website was credit by __Shahzad Minhaj - SMIT, Peshawar__
